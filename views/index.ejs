@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Greeting Card</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Happy Birthday Greeting Card</h1>
-    <form action="/greet" method="POST">
-        <label for="name">Enter your name:</label>
-        <input type="text" id="name" name="name" required>
-        <button type="submit">Get Greeting</button>
-    </form>
+    <h1>🎉 Happy Birthday Greeting Card 🎉</h1>
+    
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+    <button onclick="displayGreeting()">Get Greeting</button>
+    
+    <div id="greeting-container"></div>
+    
+    <div class="image-container" id="image-container"></div>
+
+    <audio id="celebration-sound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+    
+    <script src="script.js"></script>
 </body>
 </html>
